@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -24,12 +25,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+
       <body
         className={`${poppins.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+
+        <ThemeProvider 
+          attribute={"class"} 
+          defaultTheme="dark"
+          enableSystem={false}
+        >
+              {children}
+        </ThemeProvider>
+
       </body>
+
     </html>
   );
 }
