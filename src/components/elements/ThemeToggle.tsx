@@ -10,7 +10,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="px-4 py-2"
+      className="px-2 py-2"
     >
       {theme === "light" ? ( <CiDark size={25}/> ) : ( <CiLight size={25}/> )}
     </button>
