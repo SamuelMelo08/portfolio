@@ -1,5 +1,6 @@
 import Background from "../elements/Background";
-import ThemeToggle from "../elements/ThemeToggle";
+import HeroContent from "../elements/HeroContent";
+
 
 export default function Hero() {
 
@@ -10,10 +11,8 @@ export default function Hero() {
             <Background/>
 
             {/* Conteudo do hero */}
-            <div>
-
-                <ThemeToggle/>
-
+            <div className="flex justify-center items-center min-w-full min-h-screen">
+                <HeroContent/>
             </div> 
         </div>
 
