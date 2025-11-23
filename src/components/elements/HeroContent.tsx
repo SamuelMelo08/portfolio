@@ -4,6 +4,8 @@ import GradientTitle from "./GradientTitle";
 import GradientText from "../ui/GradientText";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import DownloadCvButton from "./DownloadCvButton";
+import ProjectButton from "./ProjectButton";
 
 export default function HeroContent() {
     const { theme, setTheme} = useTheme()
@@ -25,27 +27,32 @@ export default function HeroContent() {
 
     return (
 
-        <div className="-space-y-4">
+        <div className="space-y-5">
             
-            {/* Titulo */}
-            <div>
-                <GradientTitle textColors={textColors}/>
-            </div>
+            <div className="-space-y-6">
+                {/* Titulo */}
+                <div>
+                    <GradientTitle textColors={textColors}/>
+                </div>
 
-            {/* Sub Titulo */}
-            <div className="text-[60px]">
-                <GradientText
-                    colors={textColors}
-                    animationSpeed={3}
-                    showBorder={false}
-                    className="custom-class"
-                    >
-                    Desenvolvedor Frontend
-                </GradientText>
+                {/* Sub Titulo */}
+                <div className="text-[60px]">
+                    <GradientText
+                        colors={textColors}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className="custom-class"
+                        >
+                        Desenvolvedor Frontend
+                    </GradientText>
+                </div>
             </div>
 
             {/* Botões */}
-            <div></div>
+            <div className="flex gap-4 items-center justify-center">
+                <DownloadCvButton/>
+                <ProjectButton/>
+            </div>
 
         </div>
 
