@@ -1,13 +1,17 @@
 import GradientText from "../ui/GradientText";
 
-export default function GradientTitle() {
+type props = {
+    textColors: string[]
+}
+
+export default function GradientTitle({textColors}: props) {
 
     return (
 
-        <div className="text-[60px] font-bold">
+        <div className="text-[60px] ">
 
             <GradientText
-                colors={["#ffffff"]}
+                colors={textColors}
                 animationSpeed={3}
                 showBorder={false}
                 className="custom-class"

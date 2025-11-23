@@ -1,4 +1,11 @@
 import { ReactNode } from 'react';
+import { Onest } from "next/font/google";
+
+const onest = Onest({
+  subsets: ["latin"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
+  variable: "--font-onest",
+});
 
 interface GradientTextProps {
   children: ReactNode;
@@ -16,20 +23,20 @@ export default function GradientText({
   showBorder = false
 }: GradientTextProps) {
   const gradientStyle = {
-    backgroundImage: `linear-gradient(to right, ${colors.join(', ')})`,
+    backgroundImage: `linear-gradient(to bottom, ${colors.join(', ')})`,
     animationDuration: `${animationSpeed}s`
   };
 
   return (
     <div
-      className={`relative mx-auto flex max-w-fit flex-row items-center justify-center rounded-[1.25rem] font-medium backdrop-blur transition-shadow duration-500 overflow-hidden cursor-pointer ${className}`}
+      className={`font-onest relative mx-auto flex max-w-fit flex-row items-center justify-center rounded-[1.25rem] font-medium transition-shadow duration-500 overflow-hidden cursor-pointer ${className}`}
     >
       {showBorder && (
         <div
           className="absolute inset-0 bg-cover z-0 pointer-events-none animate-gradient"
           style={{
             ...gradientStyle,
-            backgroundSize: '300% 100%'
+            backgroundSize: '100% 300%'
           }}
         >
           <div
@@ -50,7 +57,7 @@ export default function GradientText({
           ...gradientStyle,
           backgroundClip: 'text',
           WebkitBackgroundClip: 'text',
-          backgroundSize: '300% 100%'
+          backgroundSize: '100% 300%'
         }}
       >
         {children}
