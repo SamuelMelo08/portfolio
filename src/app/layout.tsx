@@ -3,6 +3,13 @@ import { Poppins, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import NavbarDemo from "@/components/elements/NavbarDemo";
+import { Onest } from "next/font/google";
+
+const onest = Onest({
+  subsets: ["latin"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
+  variable: "--font-onest",
+});
 
 const poppins = Poppins({
   variable: "--font-poppins",
