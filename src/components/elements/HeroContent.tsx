@@ -29,19 +29,20 @@ export default function HeroContent() {
 
         <div className="space-y-5">
             
-            <div className="-space-y-6">
+            <div className="-space-y-3 md:-space-y-6">
                 {/* Titulo */}
                 <div>
                     <GradientTitle textColors={textColors}/>
                 </div>
 
                 {/* Sub Titulo */}
-                <div className="text-[60px]">
+                <div className="text-[30px] md:text-[40px] lg:text-[60px] px-5">
                     <GradientText
                         colors={textColors}
                         animationSpeed={3}
                         showBorder={false}
                         className="custom-class"
+                        direction="bottom"
                         >
                         Desenvolvedor Frontend
                     </GradientText>
@@ -49,7 +50,7 @@ export default function HeroContent() {
             </div>
 
             {/* Botões */}
-            <div className="flex gap-4 items-center justify-center">
+            <div className="flex gap-2 items-center justify-center">
                 <DownloadCvButton/>
                 <ProjectButton/>
             </div>

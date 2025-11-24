@@ -8,13 +8,14 @@ export default function GradientTitle({textColors}: props) {
 
     return (
 
-        <div className="text-[60px] ">
+        <div className="text-[35px] md:text-[50px] lg:text-[60px]">
 
             <GradientText
                 colors={textColors}
                 animationSpeed={3}
                 showBorder={false}
                 className="custom-class"
+                direction="bottom"
                 >
                 Samuel Melo
             </GradientText>
