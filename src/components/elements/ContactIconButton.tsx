@@ -9,8 +9,8 @@ type IconButtonProps = {
 export default function ContactIconButton (props : IconButtonProps) {
 
     const styleButton= {
-        dark: "text-[#FFFFFF]",
-        light: "text-[#151528]",
+        dark: "text-text",
+        light: "text-text",
     } 
     
 
