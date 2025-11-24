@@ -13,6 +13,7 @@ interface GradientTextProps {
   colors?: string[];
   animationSpeed?: number;
   showBorder?: boolean;
+  direction?: "top" | "bottom";
 }
 
 export default function GradientText({
@@ -20,10 +21,11 @@ export default function GradientText({
   className = '',
   colors = ['#ffaa40', '#9c40ff', '#ffaa40'],
   animationSpeed = 8,
-  showBorder = false
+  showBorder = false,
+  direction
 }: GradientTextProps) {
   const gradientStyle = {
-    backgroundImage: `linear-gradient(to bottom, ${colors.join(', ')})`,
+    backgroundImage: `linear-gradient(to ${direction}, ${colors.join(', ')})`,
     animationDuration: `${animationSpeed}s`
   };
 

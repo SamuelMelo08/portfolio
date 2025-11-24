@@ -22,7 +22,7 @@ export default function Hero() {
             <div className="flex justify-center items-center min-w-full min-h-screen">
                 <HeroContent/>
                 
-                <div className="flex gap-5 items-end justify-end absolute right-10 bottom-8">
+                <div className="flex gap-5 items-end justify-end absolute right-6 md:right-10 bottom-8">
 
                     <ContactIconButton
                         theme={(theme as "light" | "dark") ?? "dark"}
