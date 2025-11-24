@@ -3,11 +3,27 @@
 :root {
   --background: #F5F5FA;
   --foreground: #171717;
+  --surface: #FFFFFF;
+  --royal-violet: #7C3AED;
+  --dream-lavender: #9D7CFC;
+  --deep-azure: #2563EB;
+  --crystal-azure: #3B82F6;
+  --text: #1F2937;
+  --muted: #9CA3AF;
+  --border: #1F2937;
 }
 
 .dark {
   --background: #0A0A14;
   --foreground: #ededed;
+  --surface: #151528;
+  --royal-violet: #7C3AED;
+  --dream-lavender: #8B5CF6;
+  --deep-azure: #2563EB;
+  --crystal-azure: #3B82F6;
+  --text: #E5E7EB;
+  --muted: #6B7280;
+  --border: #E5E7EB;
 }
 
 @theme inline {
@@ -15,6 +31,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
+  --color-royal-violet: var(--royal-violet);
+  --color-dream-lavender: var(--dream-lavender);
+  --color-deep-azure: var(--deep-azure);
+  --color-crystal-azure: var(--crystal-azure);
+  --color-text: var(--text);
+  --color-surface: var(--surface);
 }
 
 body {
