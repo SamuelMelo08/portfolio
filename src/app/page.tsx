@@ -1,6 +1,7 @@
 import CircularGradient from "@/components/elements/CircularGradient";
 import About from "@/components/sessions-page/About";
 import Hero from "@/components/sessions-page/Hero";
+import Skills from "@/components/sessions-page/Skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         <CircularGradient/>
 
         <About/>
+
+        <Skills/>
 
     </div>
   );
