@@ -1,6 +1,7 @@
 import CircularGradient from "@/components/elements/CircularGradient";
 import About from "@/components/sessions-page/About";
 import Hero from "@/components/sessions-page/Hero";
+import Projects from "@/components/sessions-page/Projects";
 import Skills from "@/components/sessions-page/Skills";
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
         <About/>
 
         <Skills/>
+
+        <Projects/>
 
     </div>
   );
