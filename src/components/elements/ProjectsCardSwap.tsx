@@ -13,19 +13,16 @@ export default function ProjectCardSwap () {
                 pauseOnHover={false}
             >
 
-                <Card>
-                    <h3>Card 1</h3>
-                    <p>Your content here</p>
+                <Card className='border-deep-azure'>
+                    
                 </Card>
                 
                 <Card>
-                    <h3>Card 2</h3>
-                    <p>Your content here</p>
+                    
                 </Card>
 
                 <Card>
-                    <h3>Card 3</h3>
-                    <p>Your content here</p>
+                    
                 </Card>
 
             </CardSwap>
