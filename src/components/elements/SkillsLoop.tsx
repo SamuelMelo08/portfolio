@@ -3,13 +3,18 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import LogoLoop from "../ui/LogoLoop";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiPython, SiGit, SiGithub, SiGodotengine } from "react-icons/si";
 
 const techLogos = [
-  { node: <SiReact />, title: "React" },
-  { node: <SiNextdotjs />, title: "Next.js" },
-  { node: <SiTypescript />, title: "TS" },
-  { node: <SiTailwindcss />, title: "Tailwind" }
+  { node: <SiReact  />, title: "React" },
+  { node: <SiNextdotjs  />, title: "Next.js" },
+  { node: <SiTypescript  />, title: "TS" },
+  { node: <SiTailwindcss  />, title: "Tailwind" },
+  { node: <SiJavascript  />, title: "JS" },
+  { node: <SiPython />, title: "Python" },
+  { node: <SiGit />, title: "Git" },
+  { node: <SiGithub />, title: "Github" },
+  { node: <SiGodotengine />, title: "Godot" }
 ];
 
 export default function SkillsLoop() {
@@ -34,6 +39,7 @@ export default function SkillsLoop() {
         scaleOnHover
         fadeOutColor={theme === "dark" ? "#0A0A14" : "#F5F5FA"}
         ariaLabel="Skills"
+        className="text-text"
       />
     </div>
   );
