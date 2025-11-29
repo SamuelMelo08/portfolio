@@ -1,7 +1,6 @@
 import ProjectButton from "../elements/ProjectButton";
 import ProjectsCardSwap from "../elements/ProjectsCardSwap";
 import ShinyTextElement from "../elements/ShinyTextElement";
-import ShinyText from "../ui/ShinyText";
 
 export default function Projects() {
 
@@ -9,7 +8,7 @@ export default function Projects() {
 
         <div className="flex flex-col items-center w-full h-140 lg:h-180 py-5 px-4 lg:px-12 gap-6" id="projects">
 
-            <h1 className="py-4 text-[30px] md:text-[40px] text-tex" >Projetos</h1>
+            <h1 className="py-4 text-[30px] md:text-[40px] text-tex" data-aos="fade-down" data-aos-once="false">Projetos</h1>
             
             <div className="flex gap-20 items-center overflow-hidden justify-between px-6 lg:px-12 h-full w-full bg-surface border-deep-azure border-2 rounded-[20px]">
 
@@ -17,16 +16,19 @@ export default function Projects() {
 
                     <div className="space-y-2">
 
-                        <h1 className="font-onest text-text text-[30px] font-medium">Conheça os meus projetos!</h1>
-                        <ShinyTextElement text="Confira os projetos que venho desenvolvendo ao longo da minha carreira." classname="font-onest text-[20px] font-medium"/>
-
+                        <h1 className="font-onest text-text text-[30px] font-medium" data-aos="fade-up" data-aos-duration="500" data-aos-once="false">Conheça os meus projetos!</h1>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+                            <ShinyTextElement text="Confira os projetos que venho desenvolvendo ao longo da minha carreira." classname="font-onest text-[20px] font-medium" />
+                        </div>
                     </div>
 
-                    <ProjectButton/>
+                    <div data-aos="fade-center" data-aos-duration="1000" data-aos-once="false">
+                        <ProjectButton/>
+                    </div>
 
                 </div>
 
-                <div className="hidden lg:block justify-end flex-1" >
+                <div className="hidden lg:block justify-end flex-1" data-aos="fade-center" data-aos-duration="1000" data-aos-once="false">
                     
                     <ProjectsCardSwap/>
 
