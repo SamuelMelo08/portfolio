@@ -3,6 +3,7 @@
 import { useTheme } from "next-themes";
 import GradientText from "../ui/GradientText";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function About() {
     const { theme, setTheme} = useTheme()
@@ -24,9 +25,9 @@ export default function About() {
 
     return(
 
-        <div className="w-full min-h-screen h-screen flex flex-col px-5 space-y-4" id="about">
+        <div className="w-full min-h-160 flex flex-col px-5 py-5 space-y-6 lg:space-y-0" id="about">
             
-            <div className="py-4 text-[30px] md:text-[40px]">
+            <div className="py-4 text-[30px] md:text-[40px]" data-aos="zoom-in-up" data-aos-once="false">
                     <GradientText
                         colors={textColors}
                         animationSpeed={3}
@@ -38,18 +39,19 @@ export default function About() {
                     </GradientText>
             </div>
 
-            <div className="flex-1 flex-col justify-center lg:px-10 lg:flex-row">
+            <div className="flex flex-1 flex-col justify-center lg:px-10 w-full space-y-8 lg:flex-row lg:items-center">
 
-                <div className="flex flex-col h-full space-y-5 md:justify-center">
+
+                <div className="flex flex-col lg:w-1/2 space-y-5 md:justify-center">
 
                     <div>
 
-                        <h1 className="text-text font-medium text-[26px]" >Olá, muito prazer!</h1>
-                        <h2 className="text-text font-medium text-[24px]" >Eu me chamo Samuel Melo</h2>
+                        <h1 className="text-text font-medium text-[26px]" data-aos="fade-right" data-aos-duration="500" data-aos-once="false" >Olá, muito prazer!</h1>
+                        <h2 className="text-text font-medium text-[24px]" data-aos="fade-right" data-aos-duration="800" data-aos-once="false">Eu me chamo Samuel Melo</h2>
 
                     </div>
 
-                    <div className="lg:w-1/2">
+                    <div data-aos="fade-right" data-aos-duration="1100" data-aos-once="false">
 
                         <span>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an.
@@ -59,9 +61,15 @@ export default function About() {
 
                 </div>
 
-                <div>
-
-                
+                <div className="flex justify-center items-center py-10 lg:w-1/2 md:h-full" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
+                    
+                    <Image
+                        src={"/ImageIcon.png"}
+                        alt="image"
+                        width={280}
+                        height={280}
+                        className="rounded-full p-10 shadow-[0_0_25px_4px_#7C3AED]"
+                    />
 
                 </div>
             

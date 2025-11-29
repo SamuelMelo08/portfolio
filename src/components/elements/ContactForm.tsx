@@ -66,8 +66,8 @@ export default function ContactForm() {
                     render={({ field }) => (
 
                     <FormItem>
-                        <FormControl>
-                            <Input placeholder="Digite seu nome" {...field} />
+                        <FormControl data-aos="fade-up" data-aos-once="false" data-aos-duration="1000">
+                            <Input placeholder="Digite seu nome" className="transition-all duration-300" {...field} />
                         </FormControl>
                         {/* <FormDescription>
                             This is your public display name.
@@ -83,7 +83,7 @@ export default function ContactForm() {
                     render={({ field }) => (
 
                     <FormItem>
-                        <FormControl>
+                        <FormControl data-aos="fade-up" data-aos-once="false" data-aos-duration="1500">
                             <Input placeholder="Digite seu nome" {...field} />
                         </FormControl>
                         {/* <FormDescription>
@@ -100,7 +100,7 @@ export default function ContactForm() {
                     render={({ field }) => (
 
                     <FormItem>
-                        <FormControl>
+                        <FormControl data-aos="fade-up" data-aos-once="false" data-aos-duration="1500">
                             <Textarea className="border-none bg-[#303053] h-30 py-4 rounded-xl" placeholder="Escreva sua mensagem aqui..." {...field} />
                         </FormControl>
                         {/* <FormDescription>
@@ -111,7 +111,7 @@ export default function ContactForm() {
                 )}
                 />
 
-                <div className="flex justify-center">
+                <div className="flex justify-center" data-aos="fade-up" data-aos-once="false" data-aos-duration="500">
                     <Button variant={"gradientButton"} type="submit" className="w-full flex gap-4">
                         <BsSend /> Enviar mensagem
                     </Button>
