@@ -17,19 +17,19 @@ export default function NavbarDemo() {
   const navItems = [
     {
       name: "Inicio",
-      link: "#services",
+      link: "#",
     },
     {
       name: "Sobre",
-      link: "#services",
+      link: "#about",
     },
     {
       name: "Habilidades",
-      link: "#contacts",
+      link: "#skills",
     },
     {
       name: "Projetos",
-      link: "#contacts",
+      link: "#projects",
     },
     {
       name: "Contatos",

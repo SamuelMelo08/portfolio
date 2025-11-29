@@ -9,7 +9,7 @@ export default function Contacts() {
 
     return(
 
-        <div className="flex flex-col items-center min-w-full  py-15 px-4 lg:px-12 gap-6">
+        <div className="flex flex-col items-center min-w-full  py-15 px-4 lg:px-12 gap-6" id="contacts">
             
             <h1 className="py-4 text-[30px] md:text-[40px] text-tex" >Contatos</h1>
 

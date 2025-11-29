@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'aos/dist/aos.css';
 
 :root {
   --background: #F5F5FA;
@@ -12,6 +13,10 @@
   --muted: #9CA3AF;
   --border: #1F2937;
   --input: #ebebf1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .dark {

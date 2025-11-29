@@ -8,7 +8,7 @@ import Skills from "@/components/sessions-page/Skills";
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-full relative justify-center flex flex-col ">
+    <div className="min-h-screen min-w-full relative justify-center flex flex-col scroll-smooth">
 
         <div className="lg:px-16">
 
