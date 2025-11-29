@@ -7,7 +7,7 @@ export default function Projects() {
 
     return(
 
-        <div className="flex flex-col items-center w-full h-140 lg:h-180 py-5 px-4 lg:px-12 gap-6">
+        <div className="flex flex-col items-center w-full h-140 lg:h-180 py-5 px-4 lg:px-12 gap-6" id="projects">
 
             <h1 className="py-4 text-[30px] md:text-[40px] text-tex" >Projetos</h1>
             

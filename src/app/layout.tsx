@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import NavbarDemo from "@/components/elements/NavbarDemo";
 import { Onest } from "next/font/google";
+import AOSInit from "@/components/elements/AOSInit";
 
 const onest = Onest({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
           enableSystem={false}
         > 
           <NavbarDemo/>    
+          <AOSInit/>
           {children}
         </ThemeProvider>
 
