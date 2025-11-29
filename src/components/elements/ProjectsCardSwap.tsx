@@ -9,21 +9,25 @@ export default function ProjectCardSwap () {
             <CardSwap
                 cardDistance={60}
                 verticalDistance={70}
-                delay={5000}
-                pauseOnHover={false}
+                delay={4000}
+                pauseOnHover={true}
             >
 
-                <Card className='border-deep-azure'>
-                    
-                </Card>
-                
-                <Card>
-                    
+                <Card className="border-deep-azure">
+                <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                </div>
                 </Card>
 
                 <Card>
-                    
+                <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                </div>
                 </Card>
+
+                <Card>
+                <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                </div>
+                </Card>
+
 
             </CardSwap>
         </div>
