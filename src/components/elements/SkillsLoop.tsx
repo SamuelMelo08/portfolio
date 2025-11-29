@@ -31,7 +31,7 @@ export default function SkillsLoop() {
     <div className="w-full overflow-hidden">
       <LogoLoop
         logos={techLogos}
-        speed={120}
+        speed={100}
         direction="left"
         logoHeight={48}
         gap={40}

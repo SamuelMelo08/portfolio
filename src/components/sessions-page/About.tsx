@@ -24,7 +24,7 @@ export default function About() {
 
     return(
 
-        <div className="w-full min-h-screen h-screen flex flex-col  px-5 space-y-4">
+        <div className="w-full min-h-screen h-screen flex flex-col px-5 space-y-4">
             
             <div className="py-4 text-[30px] md:text-[40px]">
                     <GradientText
@@ -40,7 +40,7 @@ export default function About() {
 
             <div className="flex-1 flex-col justify-center lg:px-10 lg:flex-row">
 
-                <div className="flex flex-col h-full space-y-5 md:justify-center lg:px-5">
+                <div className="flex flex-col h-full space-y-5 md:justify-center">
 
                     <div>
 

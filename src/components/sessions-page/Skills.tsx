@@ -6,7 +6,7 @@ export default function Skills() {
 
     return(
 
-        <div className="min-h-220 lg:min-h-110 flex flex-col px-4 py-6 lg:px-10 justify-start items-center gap-12">
+        <div className="min-h-220 lg:min-h-110 flex flex-col px-4 py-6 lg:px-12 justify-start items-center gap-12">
             
             <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
 
