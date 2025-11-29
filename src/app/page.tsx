@@ -1,25 +1,32 @@
 import CircularGradient from "@/components/elements/CircularGradient";
 import About from "@/components/sessions-page/About";
 import Contacts from "@/components/sessions-page/Contacts";
+import Footer from "@/components/sessions-page/Footer";
 import Hero from "@/components/sessions-page/Hero";
 import Projects from "@/components/sessions-page/Projects";
 import Skills from "@/components/sessions-page/Skills";
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-full relative justify-center flex flex-col lg:px-16">
+    <div className="min-h-screen min-w-full relative justify-center flex flex-col ">
 
-        <Hero/>
+        <div className="lg:px-16">
 
-        <CircularGradient/>
+          <Hero/>
 
-        <About/>
+          <CircularGradient/>
 
-        <Skills/>
+          <About/>
 
-        <Projects/>
+          <Skills/>
 
-        <Contacts/>
+          <Projects/>
+
+          <Contacts/>
+
+        </div>
+
+        <Footer/>
 
     </div>
   );

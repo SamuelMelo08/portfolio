@@ -1,5 +1,9 @@
+import { Instagram, Linkedin } from "lucide-react";
 import ContactForm from "../elements/ContactForm";
 import ShinyTextElement from "../elements/ShinyTextElement";
+import SocialButton from "../elements/SocialButton";
+import { VscGithubAlt } from "react-icons/vsc";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contacts() {
 
@@ -21,7 +25,7 @@ export default function Contacts() {
                     <ContactForm/>
                 </div>
 
-                <div className="lg:min-w-130 lg:max-w-130 lg:min-h-125 w-full px-4 py-6 bg-surface rounded-xl" >
+                <div className="lg:min-w-130 lg:max-w-130 lg:min-h-125 w-full px-4 py-6 bg-surface rounded-xl space-y-6" >
 
                     <div className="space-y-1 md:px-4">
                         <h2 className="text-text text-[25px] font-medium">Acesse minhas redes</h2>
@@ -29,6 +33,37 @@ export default function Contacts() {
 
                     </div>
                     
+                    <div className="flex flex-col gap-5 px-4">
+
+                        <SocialButton
+                            icon={<Linkedin size={20}/>}
+                            title="Linkedin"
+                            href="https://www.linkedin.com/in/samuel-melo-4a139b378/"
+                        />
+
+                        <SocialButton
+                            icon={<VscGithubAlt size={22}/>}
+                            title="GitHub"
+                            href="#https://github.com/SamuelMelo08"
+                        />
+
+                        <div className="flex gap-4">
+
+                            <SocialButton
+                            icon={<FaWhatsapp size={20}/>}
+                            title="Whatsapp"
+                            href="https://wa.me/558882212302"
+                            />
+
+                            <SocialButton
+                            icon={<Instagram size={20}/>}
+                            title="Instagram"
+                            href="https://www.instagram.com/samuelmelo.dev/"
+                            />
+
+                        </div>
+
+                    </div>
 
                 </div>
 

@@ -11,6 +11,7 @@
   --text: #1F2937;
   --muted: #9CA3AF;
   --border: #1F2937;
+  --input: #ebebf1;
 }
 
 .dark {
@@ -24,6 +25,7 @@
   --text: #E5E7EB;
   --muted: #6B7280;
   --border: #E5E7EB;
+  --input: #303053;
 }
 
 @theme inline {
@@ -37,6 +39,7 @@
   --color-crystal-azure: var(--crystal-azure);
   --color-text: var(--text);
   --color-surface: var(--surface);
+  --color-input: var(--input);
 }
 
 body {
