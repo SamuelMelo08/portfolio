@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen min-w-full relative justify-center flex flex-col scroll-smooth">
 
-        <div className="lg:px-16">
+        <div className="lg:px-16 overflow-hidden">
 
           <Hero/>
 

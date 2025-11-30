@@ -17,7 +17,7 @@ export default function NavbarDemo() {
   const navItems = [
     {
       name: "Inicio",
-      link: "#",
+      link: "/",
     },
     {
       name: "Sobre",

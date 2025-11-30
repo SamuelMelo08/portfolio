@@ -1,10 +1,20 @@
+"use client"
+
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 export default function ProjectButton () {
+    const router = useRouter()
+
+    const handlePageProjects = () => {
+
+        router.push("project-details")
+
+    } 
 
     return (
 
-        <Button variant={"lineButton"} className="flex justify-center items-center gap-2.5 hover:shadow-[0_0_10px_2px_#7C3AED] transition-all duration-300">
+        <Button variant={"lineButton"} onClick={handlePageProjects} className="flex justify-center items-center gap-2.5 hover:shadow-[0_0_10px_2px_#7C3AED] transition-all duration-300">
 
             <span><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" className="!w-5 !h-5"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M12 12V6m-5 8V6m10 10V6M5.4 3h13.2A2.4 2.4 0 0 1 21 5.4v13.2a2.4 2.4 0 0 1-2.4 2.4H5.4A2.4 2.4 0 0 1 3 18.6V5.4A2.4 2.4 0 0 1 5.4 3"/></svg></span>
 

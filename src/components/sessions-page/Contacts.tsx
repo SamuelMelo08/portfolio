@@ -43,6 +43,7 @@ export default function Contacts() {
                                 icon={<Linkedin size={20}/>}
                                 title="Linkedin"
                                 href="https://www.linkedin.com/in/samuel-melo-4a139b378/"
+                                type="LINKEDIN"
                             />
                         </div>
 
@@ -51,6 +52,7 @@ export default function Contacts() {
                                 icon={<VscGithubAlt size={22}/>}
                                 title="GitHub"
                                 href="#https://github.com/SamuelMelo08"
+                                type="GITHUB"
                             />
                         </div>
 
@@ -60,12 +62,14 @@ export default function Contacts() {
                             icon={<FaWhatsapp size={20}/>}
                             title="Whatsapp"
                             href="https://wa.me/558882212302"
+                            type="WHATSAPP"
                             />
 
                             <SocialButton
                             icon={<Instagram size={20}/>}
                             title="Instagram"
                             href="https://www.instagram.com/samuelmelo.dev/"
+                            type="INSTAGRAM"
                             />
 
                         </div>

@@ -17,6 +17,8 @@ import { Button } from "@/components/ui/button"
 import { Textarea } from "../ui/textarea"
 import { Linkedin, SendIcon } from "lucide-react"
 import { BsSend } from "react-icons/bs"
+import { CiAt } from "react-icons/ci"
+import { IoPersonOutline } from "react-icons/io5"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -67,7 +69,22 @@ export default function ContactForm() {
 
                     <FormItem>
                         <FormControl data-aos="fade-up" data-aos-once="false" data-aos-duration="1000">
-                            <Input placeholder="Digite seu nome" className="transition-all duration-300" {...field} />
+                            <div className="relative">
+                                <span className="absolute left-3 top-4 text-muted-foreground pointer-events-none z-10">
+                                    <IoPersonOutline size={20} />
+                                </span>
+
+                                <Input
+                                    placeholder="Digite seu e-mail"
+                                    className="
+                                    pl-12
+                                    py-3
+                                    rounded-xl
+                                    text-base
+                                    "
+                                    {...field}
+                                />
+                            </div>
                         </FormControl>
                         {/* <FormDescription>
                             This is your public display name.
@@ -84,7 +101,22 @@ export default function ContactForm() {
 
                     <FormItem>
                         <FormControl data-aos="fade-up" data-aos-once="false" data-aos-duration="1500">
-                            <Input placeholder="Digite seu nome" {...field} />
+                            <div className="relative">
+                                <span className="absolute left-3 top-4.5 text-muted-foreground pointer-events-none z-10">
+                                    <CiAt size={20} />
+                                </span>
+
+                                <Input
+                                    placeholder="Digite seu e-mail"
+                                    className="
+                                    pl-12
+                                    py-3
+                                    rounded-xl
+                                    text-base
+                                    "
+                                    {...field}
+                                />
+                            </div>
                         </FormControl>
                         {/* <FormDescription>
                             This is your public display name.
