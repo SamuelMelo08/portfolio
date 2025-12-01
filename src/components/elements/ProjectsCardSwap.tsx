@@ -10,22 +10,47 @@ export default function ProjectCardSwap () {
                 cardDistance={60}
                 verticalDistance={70}
                 delay={4000}
+                
                 pauseOnHover={true}
             >
 
                 <Card className="border-deep-azure">
-                <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
-                </div>
+                    <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                        <video
+                            src="/videos/Topic.webm"
+                            className="h-full w-full object-fill rounded-xl"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                    </div>
                 </Card>
 
                 <Card>
-                <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
-                </div>
+                    <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                        <video
+                            src="/videos/Amotur.webm"
+                            className="h-full w-full object-fill rounded-xl"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                    </div>
                 </Card>
 
                 <Card>
-                <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
-                </div>
+                    <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                        <video
+                            src="/videos/Soraia-Felix-site.webm"
+                            className="h-full w-full object-fill rounded-xl"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                    </div>
                 </Card>
 
 
