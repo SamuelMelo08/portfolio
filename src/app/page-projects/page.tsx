@@ -34,7 +34,7 @@ export default function PageProjects () {
 
             <div className="w-full min-h-screen flex flex-col justify-center items-center px-5 lg:px-15 py-25 gap-2">
 
-                <h1 className="py-4 text-[30px] md:text-[40px] text-tex"> Projetos </h1>
+                <h1 className="py-4 text-[30px] md:text-[35px] text-tex"> Projetos </h1>
 
                 <div className="flex flex-wrap justify-center items-center gap-4">
 

@@ -16,13 +16,13 @@ export default function CardProject(props: PropsCardProject) {
 
     return (
 
-        <div className="max-w-90 min-h-110 max-h-100 bg-surface rounded-2xl p-5 hover:shadow-[0_0_15px_2px_#2563EB] transition-all duration-300 justify-start flex flex-col gap-4">
+        <div className="max-w-90 min-h-110 max-h-100 bg-surface rounded-2xl p-5 hover:shadow-[0_0_15px_2px_#2563EB] transition-all duration-300 justify-start flex flex-col gap-4 border-1 border-deep-azure">
 
             {/* Video */}
             <div className="w-full flex justify-center">
                 <video
                     src={`${props.hrefVideo}`}
-                    className="h-full max-w-85 object-fill rounded-xl"
+                    className="h-full max-w-82.5 object-fill rounded-xl"
                     autoPlay
                     loop
                     muted
