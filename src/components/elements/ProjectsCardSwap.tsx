@@ -10,8 +10,7 @@ export default function ProjectCardSwap () {
                 cardDistance={60}
                 verticalDistance={70}
                 delay={4000}
-                
-                pauseOnHover={true}
+                pauseOnHover={false}
             >
 
                 <Card className="border-deep-azure">

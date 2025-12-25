@@ -1,6 +1,7 @@
-import { LinkedinIcon } from "lucide-react";
+import { LinkedinIcon, MessageCircle, TrendingUpDown } from "lucide-react";
 import CardSkill from "../elements/CardSkill";
 import SkillsLoop from "../elements/SkillsLoop";
+import { AiOutlineTeam } from "react-icons/ai";
 
 export default function Skills() {
 
@@ -12,27 +13,27 @@ export default function Skills() {
 
                 <div data-aos="flip-up" data-aos-duration="1000" data-aos-once="false">
                     <CardSkill
-                        icon={<LinkedinIcon size={20} />}
-                        title="Card 01"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit"
+                        icon={<AiOutlineTeam size={25} />}
+                        title="Trabalho em Equipe"
+                        content="Experiência em colaboração em times, compartilhando ideias, alinhando soluções e contribuindo para um desenvolvimento mais eficiente."
                     
                     />
                 </div>
 
                 <div data-aos="flip-up" data-aos-duration="1500" data-aos-once="false">
                     <CardSkill
-                        icon={<LinkedinIcon size={20} />}
-                        title="Card 01"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit"
+                        icon={<MessageCircle size={20} />}
+                        title="Comunicação"
+                        content="Capacidade de comunicar ideias técnicas com clareza, facilitando o alinhamento entre design, desenvolvimento e objetivos do projeto."
                     
                     />
                 </div>
 
                 <div data-aos="flip-up" data-aos-duration="2000" data-aos-once="false">
                     <CardSkill
-                        icon={<LinkedinIcon size={20} />}
-                        title="Card 01"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit"
+                        icon={<TrendingUpDown size={20} />}
+                        title="Aprendizado Contínuo"
+                        content="Interesse constante em aprender novas tecnologias, melhorar processos e evoluir por meio de desafios e projetos práticos."
                     
                     />
                 </div>
