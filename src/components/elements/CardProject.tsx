@@ -1,6 +1,7 @@
 import { Link2Icon } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import { MdFullscreen } from "react-icons/md";
+import VideoFullScreen from "./VideoFullScreen";
 
 
 type PropsCardProject = {
@@ -17,7 +18,7 @@ export default function CardProject(props: PropsCardProject) {
 
     return (
 
-        <div className="max-w-90 min-h-110 max-h-100 bg-surface rounded-2xl p-5 hover:shadow-[0_0_15px_2px_#2563EB] transition-all duration-300 justify-start flex flex-col gap-4 border-1 border-deep-azure">
+        <div  data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement className="max-w-90 min-h-110 max-h-100 bg-surface rounded-2xl p-5 hover:shadow-[0_0_15px_2px_#2563EB] transition-all duration-300 justify-start flex flex-col gap-4 border border-deep-azure">
 
             {/* Video */}
             <div className="w-full flex justify-center relative group rounded-xl overflow-hidden">
@@ -29,6 +30,7 @@ export default function CardProject(props: PropsCardProject) {
                     loop
                     muted
                     playsInline
+                    
                 />
 
                 <div className="
@@ -40,7 +42,7 @@ export default function CardProject(props: PropsCardProject) {
                     transition-opacity duration-300
                     "
                 >
-                    <MdFullscreen size={40} className="text-white" />
+                    <VideoFullScreen title={props.title} hrefVideo={props.hrefVideo} />
                 </div>
                 
             </div>
@@ -66,7 +68,7 @@ export default function CardProject(props: PropsCardProject) {
             {/* Descrição */}
             <div className="max-w-90">
 
-                <span className="line-clamp-6 text-justify">
+                <span className="line-clamp-6 text-justify leading-relaxed">
                     {props.description}
                 </span>
 

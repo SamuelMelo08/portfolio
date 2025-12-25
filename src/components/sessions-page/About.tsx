@@ -54,7 +54,7 @@ export default function About() {
                     <div data-aos="fade-right" data-aos-duration="1100" data-aos-once="false">
 
                         <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit an.
+                            Sou desenvolvedor front-end com foco na construção de interfaces modernas, responsivas e bem estruturadas. Trabalho principalmente com React, Next.js e TypeScript, buscando unir design e desenvolvimento para criar experiências claras e funcionais. Tenho interesse em tecnologia, sistemas e desenvolver jogos, e estou constantemente evoluindo minhas habilidades por meio de projetos práticos.
                         </span>
 
                     </div>
