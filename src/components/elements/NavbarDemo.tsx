@@ -78,6 +78,12 @@ export default function NavbarDemo() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
+            <div>
+              <NavbarButton variant="dark" className="flex justify-center items-center">
+                <ThemeToggle/>
+                <span className="font-normal">Tema</span>
+              </NavbarButton>
+          </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
