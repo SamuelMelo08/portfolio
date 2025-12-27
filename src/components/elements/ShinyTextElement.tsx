@@ -1,9 +1,7 @@
+import { ShinyTextProps } from "@/types/types";
 import ShinyText from "../ui/ShinyText";
 
-type ShinyTextProps = {
-    text: string
-    classname: string
-}
+
 
 export default function ShinyTextElement({text, classname} : ShinyTextProps) {
 

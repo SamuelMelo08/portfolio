@@ -1,18 +1,7 @@
 import { Link2Icon } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
-import { MdFullscreen } from "react-icons/md";
 import VideoFullScreen from "./VideoFullScreen";
-
-
-type PropsCardProject = {
-
-    hrefVideo: string;
-    title: string;
-    description: string;
-    linkedin: string;
-    link: string;
-
-}
+import { PropsCardProject } from "@/types/types";
 
 export default function CardProject(props: PropsCardProject) {
 

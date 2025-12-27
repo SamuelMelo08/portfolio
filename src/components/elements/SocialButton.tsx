@@ -1,11 +1,4 @@
-import { ReactNode } from "react";
-
-type SocialProps = {
-  title: string;
-  icon: ReactNode;
-  href: string;
-  type: "LINKEDIN" | "GITHUB" | "WHATSAPP" | "INSTAGRAM";
-};
+import { SocialProps } from "@/types/types";
 
 export default function SocialButton(props: SocialProps) {
 

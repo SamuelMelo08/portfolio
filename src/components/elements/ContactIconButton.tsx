@@ -1,10 +1,4 @@
-import { ReactNode } from "react";
-
-type IconButtonProps = {
-    theme: "dark" | "light";
-    href: string;
-    icon: ReactNode;
-}
+import { IconButtonProps } from "@/types/types";
 
 export default function ContactIconButton (props : IconButtonProps) {
 

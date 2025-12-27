@@ -234,7 +234,7 @@ export const NavbarLogo = () => {
   return (
     <a
       href="/"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex items-center space-x-2 px-1 py-1 text-sm font-normal text-black"
     >
       <img
         src="/Logo-Samuel.png"
@@ -242,7 +242,7 @@ export const NavbarLogo = () => {
         width={50}
         height={30}
       />
-      <span className="font-medium text-[18px] text-text">SamuelMelo</span>
+      <span className="font-medium text-[16px] text-text">SamuelMelo</span>
     </a>
   );
 };

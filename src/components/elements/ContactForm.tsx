@@ -3,10 +3,8 @@
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
-    FormLabel,
     FormMessage,
 } from "@/components/ui/form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -15,7 +13,6 @@ import { z } from "zod"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "../ui/textarea"
-import { Linkedin, SendIcon } from "lucide-react"
 import { BsSend } from "react-icons/bs"
 import { CiAt } from "react-icons/ci"
 import { IoPersonOutline } from "react-icons/io5"

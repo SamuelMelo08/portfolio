@@ -6,12 +6,10 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { PropsVideoFullScreen } from "@/types/types"
 import { MdFullscreen } from "react-icons/md"
 
-type PropsVideoFullScreen = {
-    title: string;
-    hrefVideo : string
-}
+
 
 export default function VideoFullScreen ({hrefVideo, title}: PropsVideoFullScreen) {
 

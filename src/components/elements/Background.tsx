@@ -10,6 +10,7 @@ export default function Background() {
         ['#7C3AED', '#2563EB', '#A78BFA']
         :
         ['#7C3AED', '#2563EB', '#C7D2FE']
+        
     return (
 
         <div className='absolute inset-0 -z-10 overflow-hidden' data-aos="fade-zoom-in" data-aos-delay="800">

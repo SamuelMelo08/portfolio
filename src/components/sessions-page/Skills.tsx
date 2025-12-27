@@ -1,4 +1,4 @@
-import { LinkedinIcon, MessageCircle, TrendingUpDown } from "lucide-react";
+import { MessageCircle, TrendingUpDown } from "lucide-react";
 import CardSkill from "../elements/CardSkill";
 import SkillsLoop from "../elements/SkillsLoop";
 import { AiOutlineTeam } from "react-icons/ai";

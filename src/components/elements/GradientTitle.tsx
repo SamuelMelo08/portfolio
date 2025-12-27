@@ -1,10 +1,7 @@
+import { PropsGradientTitle } from "@/types/types";
 import GradientText from "../ui/GradientText";
 
-type props = {
-    textColors: string[]
-}
-
-export default function GradientTitle({textColors}: props) {
+export default function GradientTitle({textColors}: PropsGradientTitle) {
 
     return (
 

@@ -1,10 +1,4 @@
-import { ReactNode } from "react"
-
-type PropsCardSkill = {
-    icon: ReactNode;
-    title: string;
-    content: string;
-}
+import { PropsCardSkill } from "@/types/types"
 
 export default function CardSkill (props: PropsCardSkill) {
 
