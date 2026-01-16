@@ -64,7 +64,7 @@ export default function About() {
                 <div className="flex justify-center items-center py-10 lg:w-1/2 md:h-full" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                     
                     <Image
-                        src={"/ImagemPerfil.jpeg"}
+                        src={"/Imagem-perfil.wbmp"}
                         alt="image"
                         width={280}
                         height={280}
