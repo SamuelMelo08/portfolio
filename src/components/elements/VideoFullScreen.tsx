@@ -24,7 +24,8 @@ export default function VideoFullScreen ({hrefVideo, title}: PropsVideoFullScree
             <DialogHeader>
             
                 <DialogTitle>{title}</DialogTitle>
-    
+                <DialogDescription></DialogDescription>
+                
             </DialogHeader>
 
             <DialogDescription className="flex justify-center items-center py-4" asChild>
