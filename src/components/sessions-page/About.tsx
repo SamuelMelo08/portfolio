@@ -46,14 +46,14 @@ export default function About() {
 
                     <div>
 
-                        <h1 className="text-text font-medium text-[26px]" data-aos="fade-right" data-aos-duration="500" data-aos-once="false" >Olá, muito prazer!</h1>
+                        <h1 className=" font-medium text-[26px] text-dream-lavender" data-aos="fade-right" data-aos-duration="500" data-aos-once="false" >Olá, muito prazer!</h1>
                         <h2 className="text-text font-medium text-[24px]" data-aos="fade-right" data-aos-duration="800" data-aos-once="false">Eu me chamo Samuel Melo</h2>
 
                     </div>
 
                     <div data-aos="fade-right" data-aos-duration="1100" data-aos-once="false">
 
-                        <span>
+                        <span className="text-text/70">
                             Sou desenvolvedor front-end com foco na construção de interfaces modernas, responsivas e bem estruturadas. Trabalho principalmente com React, Next.js e TypeScript, buscando unir design e desenvolvimento para criar experiências claras e funcionais. Tenho interesse em tecnologia, sistemas e desenvolver jogos, e estou constantemente evoluindo minhas habilidades por meio de projetos práticos.
                         </span>
 
@@ -64,11 +64,11 @@ export default function About() {
                 <div className="flex justify-center items-center py-10 lg:w-1/2 md:h-full" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                     
                     <Image
-                        src={"/ImageIcon.png"}
+                        src={"/ImagemPerfil.jpeg"}
                         alt="image"
                         width={280}
                         height={280}
-                        className="rounded-full p-10 shadow-[0_0_25px_4px_#7C3AED]"
+                        className="rounded-full m-10 shadow-[0_0_25px_4px_#7C3AED]"
                     />
 
                 </div>
