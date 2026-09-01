@@ -72,7 +72,7 @@ export default function ContactForm() {
                                 </span>
 
                                 <Input
-                                    placeholder="Digite seu e-mail"
+                                    placeholder="Digite seu nome"
                                     className="
                                     pl-12
                                     py-3

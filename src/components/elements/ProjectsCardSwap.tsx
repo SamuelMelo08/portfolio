@@ -16,6 +16,19 @@ export default function ProjectCardSwap () {
                 <Card className="border-deep-azure">
                     <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
                         <video
+                            src="/videos/cronos.webm"
+                            className="h-full w-full object-fill rounded-xl"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                    </div>
+                </Card>
+
+                <Card className="border-deep-azure">
+                    <div className="h-full w-full transition-all rounded-xl duration-200 hover:shadow-[0_0_15px_#3B82F6]">
+                        <video
                             src="/videos/Topic-video.webm"
                             className="h-full w-full object-fill rounded-xl"
                             autoPlay

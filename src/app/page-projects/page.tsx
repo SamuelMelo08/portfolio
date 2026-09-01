@@ -5,6 +5,13 @@ export default function PageProjects () {
 
     const projects = [
         {
+            hrefVideo: "/videos/cronos.webm",
+            title: "Cronos",
+            description: "Cronos é um app web de organização de rotinas e eventos, criado para ser simples e fácil de utilizr com um design elegante e moderno e de fácil acesso com diverssas funcionalidades.",
+            linkedin: "https://lnkd.in/p/ehKM59Cw",
+            link: "https://cronos.dev.br"
+        },
+        {
             hrefVideo: "/videos/Topic-video.webm",
             title: "Topic",
             description: "Topic é uma plataforma de inovação criada para aproximar empresas e startups, facilitando a criação e o desenvolvimento de soluções dentro de um ambiente orientado à inovação.",
@@ -32,20 +39,20 @@ export default function PageProjects () {
         <div className="flex flex-col">
 
             <div className="w-full min-h-screen flex flex-col justify-center items-center px-5 lg:px-15 py-25 gap-2">
+                <h1
+                    className="py-4 text-[30px] md:text-[35px] text-tex"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                >
+                    Projetos
+                </h1>
 
-                <h1 className="py-4 text-[30px] md:text-[35px] text-tex" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement> Projetos </h1>
-
-                <div className="flex flex-wrap justify-center items-center gap-4">
-
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto">
                     {projects.map((project, key) => (
-                        
-                        <CardProject key={key} {...project} />
-
+                    <CardProject key={key} {...project} />
                     ))}
-
                 </div>
-
-            </div>
+        </div>
 
             <Footer/>
         </div>
