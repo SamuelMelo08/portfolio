@@ -36,7 +36,7 @@ export default function HeroContent() {
                 </div>
 
                 {/* Sub Titulo */}
-                <div className="text-[30px] md:text-[40px] lg:text-[60px] px-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <div className="text-[26px] md:text-[40px] lg:text-[60px] px-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                     <GradientText
                         colors={textColors}
                         animationSpeed={3}
